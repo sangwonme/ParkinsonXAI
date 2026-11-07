@@ -1,0 +1,78 @@
+{
+ "walk": "019-15-002980_wid00_1",
+ "dataset": "PD-GaM",
+ "segments": [
+  {
+   "title": "Original healthy walk (UPDRS-gait 0)",
+   "blackbox_probs": [
+    0.5540000200271606,
+    0.4129999876022339,
+    0.032999999821186066
+   ],
+   "symptom_probs": [
+    0.4699999988079071,
+    0.4350000023841858,
+    0.0949999988079071
+   ],
+   "contributions": {
+    "stride_length": 0.10700000077486038,
+    "cadence": 0.03500000014901161,
+    "arm_swing": -0.20999999344348907,
+    "arm_asymmetry": 0.06400000303983688,
+    "rhythm_irregularity": -0.0020000000949949026,
+    "trunk_flexion": -0.20900000631809235,
+    "walking_speed": 0.6570000052452087,
+    "freeze_index": -0.0020000000949949026
+   },
+   "residual": -0.037
+  },
+  {
+   "title": "Same walk, arm swing reduced to 30% (synthetic)",
+   "blackbox_probs": [
+    0.3970000147819519,
+    0.546999990940094,
+    0.0560000017285347
+   ],
+   "symptom_probs": [
+    0.3190000057220459,
+    0.515999972820282,
+    0.16500000655651093
+   ],
+   "contributions": {
+    "stride_length": 0.10700000077486038,
+    "cadence": 0.03500000014901161,
+    "arm_swing": 0.4269999861717224,
+    "arm_asymmetry": 0.06400000303983688,
+    "rhythm_irregularity": -0.0020000000949949026,
+    "trunk_flexion": -0.20900000631809235,
+    "walking_speed": 0.6570000052452087,
+    "freeze_index": -0.0020000000949949026
+   },
+   "residual": -0.037
+  },
+  {
+   "title": "Same walk, stride shortened to 55% (synthetic)",
+   "blackbox_probs": [
+    0.15399999916553497,
+    0.1809999942779541,
+    0.6650000214576721
+   ],
+   "symptom_probs": [
+    0.027000000700354576,
+    0.20399999618530273,
+    0.7689999938011169
+   ],
+   "contributions": {
+    "stride_length": 1.5920000076293945,
+    "cadence": 0.06400000303983688,
+    "arm_swing": -0.23899999260902405,
+    "arm_asymmetry": 0.06400000303983688,
+    "rhythm_irregularity": -0.0020000000949949026,
+    "trunk_flexion": -0.20900000631809235,
+    "walking_speed": 2.638000011444092,
+    "freeze_index": -0.0020000000949949026
+   },
+   "residual": -0.037
+  }
+ ]
+}

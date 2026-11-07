@@ -1,0 +1,59 @@
+{
+ "A1_MobileNet_TM": {
+  "e5_abs_spearman_vs_orig": {
+   "head": 0.32448738711215175,
+   "head+top25%": 0.1760183096461354,
+   "head+top50%": 0.2684456296445632,
+   "all": 0.2646970257575168
+  },
+  "e6": {
+   "spiral": {
+    "del_cam": 0.4418345306697605,
+    "del_rand": 0.5851561269564749,
+    "ins_cam": 0.6747514844314598,
+    "ins_rand": 0.5942654115092713
+   },
+   "wave": {
+    "del_cam": 0.8956821048969748,
+    "del_rand": 0.8887141729906821,
+    "ins_cam": 0.9335083159248463,
+    "ins_rand": 0.8873516648596461
+   }
+  }
+ },
+ "A3_SwinTiny": {
+  "e5_abs_spearman_vs_orig": {
+   "head": 0.2890261637753635,
+   "head+stage4": 0.23146048988691628,
+   "head+stage3-4": 0.17063119427663948,
+   "all": NaN
+  },
+  "e6": {
+   "spiral": {
+    "del_cam": 0.572324024985234,
+    "del_rand": 0.6607393212119738,
+    "ins_cam": 0.7065943347414334,
+    "ins_rand": 0.6654650603731472
+   },
+   "wave": {
+    "del_cam": 0.6557324730356535,
+    "del_rand": 0.7437506447235743,
+    "ins_cam": 0.6525392035643259,
+    "ins_rand": 0.7472811383008957
+   }
+  }
+ },
+ "A3_scorecam_layer_recheck": {
+  "swin.layernorm": {
+   "gradcam_enrichment": 1.1669055428114135,
+   "scorecam_enrichment": 0.7708573325566788,
+   "gradcam_vs_scorecam_spearman": -0.5525699764128468
+  },
+  "layers[-1].blocks[-1].layernorm_before": {
+   "gradcam_enrichment": 0.8705613371842785,
+   "scorecam_enrichment": 0.7958129853890874,
+   "gradcam_vs_scorecam_spearman": 0.07223219945718719
+  }
+ },
+ "runtime_s": 4058.8
+}

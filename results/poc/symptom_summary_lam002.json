@@ -1,0 +1,288 @@
+{
+ "variant": {
+  "fixed_ops": false,
+  "no_residual": false,
+  "tag": "_lam002"
+ },
+ "n_walks": 2953,
+ "class_counts": [
+  1244,
+  1071,
+  638
+ ],
+ "epochs": 40,
+ "lambda_r": 0.02,
+ "proposed": {
+  "metrics": {
+   "acc": 0.6169996613613274,
+   "macro_f1": 0.606420723126135,
+   "qwk": 0.6223782656778121,
+   "mae_expected": 0.4664195858346897
+  },
+  "ci95": {
+   "acc": [
+    0.6000677277345072,
+    0.6356332543176431
+   ],
+   "macro_f1": [
+    0.5881212792447986,
+    0.6247032916876945
+   ],
+   "qwk": [
+    0.5990515716197335,
+    0.6454733378020161
+   ],
+   "mae_expected": [
+    0.4536089401739341,
+    0.4784373006122681
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.3079365079365079,
+   "BMCLab": 0.5568808560503148,
+   "PD-GaM": 0.6663766643381809,
+   "T-SDU-PD": 0.48018426720958374
+  }
+ },
+ "logreg_features": {
+  "metrics": {
+   "acc": 0.6671181848967151,
+   "macro_f1": 0.6605269223118531,
+   "qwk": 0.6528973363671875,
+   "mae_expected": 0.4325320297668611
+  },
+  "ci95": {
+   "acc": [
+    0.650186251269895,
+    0.683711479850999
+   ],
+   "macro_f1": [
+    0.6436133664380204,
+    0.6775908800223441
+   ],
+   "qwk": [
+    0.629320399251764,
+    0.6783647924061413
+   ],
+   "mae_expected": [
+    0.41986584721833126,
+    0.4451723641738496
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.44652254064018776,
+   "BMCLab": 0.6552072612550373,
+   "PD-GaM": 0.7025432450294954,
+   "T-SDU-PD": 0.4889055098479182
+  }
+ },
+ "random_forest_features": {
+  "metrics": {
+   "acc": 0.6491703352522858,
+   "macro_f1": 0.6374248064237688,
+   "qwk": 0.6206126625894317,
+   "mae_expected": 0.44443804440021434
+  },
+  "ci95": {
+   "acc": [
+    0.632577040298002,
+    0.6664493735184558
+   ],
+   "macro_f1": [
+    0.6207626004062842,
+    0.6551229480043971
+   ],
+   "qwk": [
+    0.5959167692526632,
+    0.6471606717814852
+   ],
+   "mae_expected": [
+    0.43156159833875074,
+    0.45724118471629926
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.5397184514831573,
+   "BMCLab": 0.5950009128189909,
+   "PD-GaM": 0.7044779472532127,
+   "T-SDU-PD": 0.44075642349159444
+  }
+ },
+ "residual_share": {
+  "mean": 0.06109224111423761,
+  "median": 0.046902081402320855,
+  "p90": 0.14766822070608668
+ },
+ "injection": {
+  "proposed|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.12737344432539094,
+   "class_increase_rate": 0.1229903536977492,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.125
+  },
+  "proposed|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.9143015399406412,
+   "class_increase_rate": 0.9485530546623794,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "proposed|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.1678833772304432,
+   "class_increase_rate": 0.1760450160771704,
+   "explanation_hit_rate": 0.6294212218649518,
+   "chance_hit": 0.125
+  },
+  "logreg|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.1233779178911885,
+   "class_increase_rate": 0.17041800643086816,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.125
+  },
+  "logreg|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 1.0275875794113656,
+   "class_increase_rate": 0.8914790996784566,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "logreg|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.1558890017768486,
+   "class_increase_rate": 0.2853697749196141,
+   "explanation_hit_rate": 0.23231511254019294,
+   "chance_hit": 0.125
+  },
+  "random_forest|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.16467080184859512,
+   "class_increase_rate": 0.1197749196141479,
+   "explanation_hit_rate": 0.9389067524115756,
+   "chance_hit": 0.125
+  },
+  "random_forest|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.9146122822710084,
+   "class_increase_rate": 0.8906752411575563,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "random_forest|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.17078929146965474,
+   "class_increase_rate": 0.18167202572347266,
+   "explanation_hit_rate": 0.38263665594855306,
+   "chance_hit": 0.125
+  }
+ },
+ "robustness": {
+  "proposed|pad60": 0.0,
+  "proposed|scale0.8": 0.0,
+  "proposed|scale1.25": 0.0,
+  "logreg|pad60": 0.0,
+  "logreg|scale0.8": 0.0,
+  "logreg|scale1.25": 0.0
+ },
+ "learned_operator_params": [
+  {
+   "fold": 0,
+   "gait_band_hz": [
+    0.5596668124198914,
+    1.6924681663513184
+   ],
+   "freeze_band_hz": [
+    2.950295925140381,
+    7.9588775634765625
+   ],
+   "locomotion_band_hz": [
+    0.5,
+    3.0917046070098877
+   ],
+   "arm_wrist_weight": 0.8414604663848877,
+   "cadence_sign": -0.9568088054656982
+  },
+  {
+   "fold": 1,
+   "gait_band_hz": [
+    0.9654518961906433,
+    2.0302858352661133
+   ],
+   "freeze_band_hz": [
+    2.890357494354248,
+    7.894413948059082
+   ],
+   "locomotion_band_hz": [
+    0.5,
+    3.054769992828369
+   ],
+   "arm_wrist_weight": 0.8760532736778259,
+   "cadence_sign": -0.9911646842956543
+  },
+  {
+   "fold": 2,
+   "gait_band_hz": [
+    0.47712042927742004,
+    1.8103461265563965
+   ],
+   "freeze_band_hz": [
+    2.8415637016296387,
+    7.916888236999512
+   ],
+   "locomotion_band_hz": [
+    0.5,
+    3.0074870586395264
+   ],
+   "arm_wrist_weight": 0.8358744978904724,
+   "cadence_sign": -0.9854584336280823
+  },
+  {
+   "fold": 3,
+   "gait_band_hz": [
+    0.10782844573259354,
+    0.409231573343277
+   ],
+   "freeze_band_hz": [
+    2.7466273307800293,
+    7.818570137023926
+   ],
+   "locomotion_band_hz": [
+    0.5,
+    3.1460378170013428
+   ],
+   "arm_wrist_weight": 0.8525689244270325,
+   "cadence_sign": 0.9608590006828308
+  },
+  {
+   "fold": 4,
+   "gait_band_hz": [
+    0.40655162930488586,
+    1.54845130443573
+   ],
+   "freeze_band_hz": [
+    2.9635605812072754,
+    7.95094108581543
+   ],
+   "locomotion_band_hz": [
+    0.5,
+    3.081294536590576
+   ],
+   "arm_wrist_weight": 0.8308692574501038,
+   "cadence_sign": -0.9039260745048523
+  }
+ ],
+ "mean_abs_contribution": {
+  "stride_length": 0.7543,
+  "cadence": 0.1761,
+  "arm_swing": 0.3304,
+  "arm_asymmetry": 0.0698,
+  "rhythm_irregularity": 0.0107,
+  "trunk_flexion": 0.2627,
+  "walking_speed": 0.751,
+  "freeze_index": 0.0154
+ },
+ "runtime_s": 252.4,
+ "peak_rss_gb": 1.38
+}

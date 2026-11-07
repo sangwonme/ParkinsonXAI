@@ -1,0 +1,361 @@
+{
+ "E0_public_samples": {
+  "detectron": {
+   "n": 4,
+   "acc_ensemble": 0.5,
+   "acc_mean_over_folds": 0.55,
+   "label_counts": {
+    "0": 4,
+    "1": 0,
+    "2": 0
+   }
+  },
+  "kinect2d": {
+   "n": 4,
+   "acc_ensemble": 0.5,
+   "acc_mean_over_folds": 0.55,
+   "label_counts": {
+    "0": 2,
+    "1": 2,
+    "2": 0
+   }
+  }
+ },
+ "runtime": {},
+ "public_samples(detectron)": {
+  "gradcam": {
+   "pad_frac": 0.6437499999999999,
+   "pad_share": 0.3411864601075649,
+   "roi_enrichment": 1.4950234182178974,
+   "edge_enrichment": 1.23494533598423,
+   "top_joint_share": 0.3892252445220947,
+   "nose_share": 0.00678399637399707,
+   "pointing_hit": 0.25,
+   "share_head(nose)": 0.00678399637399707,
+   "share_shoulders": 0.013667256338521838,
+   "share_arms(el,wr)": 0.7639698833227158,
+   "share_hips": 0.0814173398539424,
+   "share_legs(kn,ank)": 0.13416157104074955
+  },
+  "ig": {
+   "pad_frac": 0.6437499999999999,
+   "pad_share": 0.4497651681303978,
+   "roi_enrichment": 0.537318208720535,
+   "edge_enrichment": 0.6840685388073324,
+   "top_joint_share": 0.24387617781758308,
+   "nose_share": 0.22750138863921165,
+   "pointing_hit": 0.0,
+   "share_head(nose)": 0.22750138863921165,
+   "share_shoulders": 0.2818503603339195,
+   "share_arms(el,wr)": 0.20476297289133072,
+   "share_hips": 0.06456425786018372,
+   "share_legs(kn,ank)": 0.2213210165500641
+  },
+  "occlusion": {
+   "pad_frac": 0.6437499999999999,
+   "pad_share": 0.5518288835883141,
+   "roi_enrichment": 0.8723132647573948,
+   "edge_enrichment": 0.8209460653364659,
+   "top_joint_share": 0.1719624027609825,
+   "nose_share": 0.10875587910413742,
+   "pointing_hit": 0.0,
+   "share_head(nose)": 0.10875587910413742,
+   "share_shoulders": 0.13884778320789337,
+   "share_arms(el,wr)": 0.22385388985276222,
+   "share_hips": 0.026698400732129812,
+   "share_legs(kn,ank)": 0.5018441006541252
+  },
+  "baseline_random": {
+   "pad_frac": 0.6437499999999999,
+   "pad_share": 0.6427290598737211,
+   "roi_enrichment": 1.0115808683570973,
+   "edge_enrichment": 0.9794138725218307,
+   "top_joint_share": 0.08504195016594106,
+   "nose_share": 0.07612317926457475,
+   "pointing_hit": 0.0,
+   "share_head(nose)": 0.07612317926457475,
+   "share_shoulders": 0.1515193013569352,
+   "share_arms(el,wr)": 0.31257675416415664,
+   "share_hips": 0.15413115614662465,
+   "share_legs(kn,ank)": 0.30564960906770877
+  },
+  "baseline_oracle": {
+   "pad_frac": 0.6437499999999999,
+   "pad_share": 0.0,
+   "roi_enrichment": 1.625,
+   "edge_enrichment": 1.0,
+   "top_joint_share": 0.125,
+   "nose_share": 0.0,
+   "pointing_hit": 1.0,
+   "share_head(nose)": 0.0,
+   "share_shoulders": 0.0,
+   "share_arms(el,wr)": 0.5,
+   "share_hips": 0.0,
+   "share_legs(kn,ank)": 0.5
+  },
+  "fold_agreement_gradcam_spearman": 0.36190667682640143,
+  "method_agreement": {
+   "gradcam-vs-ig": -0.1815514964020048,
+   "gradcam-vs-occlusion": -0.3216915501862465,
+   "ig-vs-occlusion": 0.28855192959560505
+  },
+  "E5_abs_spearman_vs_orig": {
+   "head": {
+    "gradcam": 0.14183715645811049,
+    "ig": 0.32563392341327196
+   },
+   "head+block4": {
+    "gradcam": 0.13191834562919622,
+    "ig": 0.3226712347559188
+   },
+   "head+block3-4": {
+    "gradcam": 0.16075477343807584,
+    "ig": 0.4519371760160094
+   },
+   "all": {
+    "gradcam": 0.1084177157567367,
+    "ig": 0.09795790304825026
+   }
+  },
+  "E6": {
+   "gradcam|attr": {
+    "deletion_auc": -0.10023109242320058,
+    "insertion_auc": -0.7635278187692165
+   },
+   "gradcam|rand": {
+    "deletion_auc": 0.19022515127435333,
+    "insertion_auc": 0.25522922566160555
+   },
+   "ig|attr": {
+    "deletion_auc": -0.5315061466768383,
+    "insertion_auc": -0.21857222132384785
+   },
+   "ig|rand": {
+    "deletion_auc": 0.18495438070967796,
+    "insertion_auc": 0.263927908136975
+   }
+  },
+  "n": 4
+ },
+ "carepd_frontal": {
+  "gradcam": {
+   "pad_frac": 0.04527777777777778,
+   "pad_share": 0.03415189621349176,
+   "roi_enrichment": 1.5488372166951498,
+   "edge_enrichment": 0.9956576029211283,
+   "top_joint_share": 0.5277834355831146,
+   "nose_share": 0.01831608274029956,
+   "pointing_hit": 0.9,
+   "share_head(nose)": 0.01831608274029956,
+   "share_shoulders": 0.02461377387517132,
+   "share_arms(el,wr)": 0.9231137037277222,
+   "share_hips": 0.005988836684991838,
+   "share_legs(kn,ank)": 0.02796761508725467
+  },
+  "ig": {
+   "pad_frac": 0.04527777777777778,
+   "pad_share": 0.02771824902544419,
+   "roi_enrichment": 0.8051037768522898,
+   "edge_enrichment": 0.6826054759323597,
+   "top_joint_share": 0.27751025234659515,
+   "nose_share": 0.25066647281249366,
+   "pointing_hit": 0.3333333333333333,
+   "share_head(nose)": 0.25066647281249366,
+   "share_shoulders": 0.24764488053818542,
+   "share_arms(el,wr)": 0.06892920937389135,
+   "share_hips": 0.006482688810986777,
+   "share_legs(kn,ank)": 0.42627674515048664
+  },
+  "occlusion": {
+   "pad_frac": 0.04527777777777778,
+   "pad_share": 0.02665654563655456,
+   "roi_enrichment": 1.0710362829267979,
+   "edge_enrichment": 0.6654816679904858,
+   "top_joint_share": 0.17609591012199718,
+   "nose_share": 0.12690939673533042,
+   "pointing_hit": 0.5666666666666667,
+   "share_head(nose)": 0.12690939673533042,
+   "share_shoulders": 0.20558923855423927,
+   "share_arms(el,wr)": 0.06852292359496157,
+   "share_hips": 0.003973240038612857,
+   "share_legs(kn,ank)": 0.5950052320957184
+  },
+  "baseline_random": {
+   "pad_frac": 0.04527777777777778,
+   "pad_share": 0.04502411309966052,
+   "roi_enrichment": 1.000988998945293,
+   "edge_enrichment": 0.9938268655684562,
+   "top_joint_share": 0.08362893864582302,
+   "nose_share": 0.07628875312956265,
+   "pointing_hit": 0.5833333333333334,
+   "share_head(nose)": 0.07628875312956265,
+   "share_shoulders": 0.1546506117344015,
+   "share_arms(el,wr)": 0.3085130971958988,
+   "share_hips": 0.15305971019051984,
+   "share_legs(kn,ank)": 0.30748782774961714
+  },
+  "baseline_oracle": {
+   "pad_frac": 0.04527777777777778,
+   "pad_share": 0.0,
+   "roi_enrichment": 1.625,
+   "edge_enrichment": 1.0,
+   "top_joint_share": 0.125,
+   "nose_share": 0.0,
+   "pointing_hit": 1.0,
+   "share_head(nose)": 0.0,
+   "share_shoulders": 0.0,
+   "share_arms(el,wr)": 0.5,
+   "share_hips": 0.0,
+   "share_legs(kn,ank)": 0.5
+  },
+  "fold_agreement_gradcam_spearman": 0.5437223459857928,
+  "method_agreement": {
+   "gradcam-vs-ig": -0.3037011322235402,
+   "gradcam-vs-occlusion": -0.36212175968101545,
+   "ig-vs-occlusion": 0.7782379571256981
+  },
+  "E5_abs_spearman_vs_orig": {
+   "head": {
+    "gradcam": 0.5563159651966264,
+    "ig": 0.7094244549786523
+   },
+   "head+block4": {
+    "gradcam": 0.17223875434193253,
+    "ig": 0.7043310002919675
+   },
+   "head+block3-4": {
+    "gradcam": 0.29038161151188685,
+    "ig": 0.708093335636017
+   },
+   "all": {
+    "gradcam": 0.20879155580720882,
+    "ig": 0.42870095657101975
+   }
+  },
+  "E6": {
+   "gradcam|attr": {
+    "deletion_auc": 0.42268116802598044,
+    "insertion_auc": -0.08558267174133415
+   },
+   "gradcam|rand": {
+    "deletion_auc": 0.2826912894588895,
+    "insertion_auc": 0.2748004640763004
+   },
+   "ig|attr": {
+    "deletion_auc": -0.4466147721069865,
+    "insertion_auc": 0.17446461039284858
+   },
+   "ig|rand": {
+    "deletion_auc": 0.27895729256910273,
+    "insertion_auc": 0.28521719923572775
+   }
+  },
+  "n": 60
+ },
+ "E0_carepd_external_ALL": {
+  "frontal|190|ALL": {
+   "n": 2953,
+   "acc": 0.41415509651202165,
+   "macro_f1": 0.23741010215413397,
+   "mae_raw": 0.9020878799559424,
+   "spearman_raw": -0.19065802359474357,
+   "pred_dist": {
+    "0": 2721,
+    "1": 228,
+    "2": 4
+   },
+   "true_dist": {
+    "0": 1244,
+    "1": 1071,
+    "2": 638
+   }
+  },
+  "back|190|ALL": {
+   "n": 2953,
+   "acc": 0.4232983406705046,
+   "macro_f1": 0.23399952688496037,
+   "mae_raw": 0.9013017524790439,
+   "spearman_raw": -0.16075032582885135,
+   "pred_dist": {
+    "0": 2766,
+    "1": 187,
+    "2": 0
+   },
+   "true_dist": {
+    "0": 1244,
+    "1": 1071,
+    "2": 638
+   }
+  },
+  "side|190|ALL": {
+   "n": 2953,
+   "acc": 0.41212326447680325,
+   "macro_f1": 0.21435638047440317,
+   "mae_raw": 0.9723008022080818,
+   "spearman_raw": -0.15722688481412903,
+   "pred_dist": {
+    "0": 2823,
+    "1": 130,
+    "2": 0
+   },
+   "true_dist": {
+    "0": 1244,
+    "1": 1071,
+    "2": 638
+   }
+  },
+  "oblique45|190|ALL": {
+   "n": 2953,
+   "acc": 0.4080596004063664,
+   "macro_f1": 0.2309828922143591,
+   "mae_raw": 0.9154627740062716,
+   "spearman_raw": -0.1976974377322785,
+   "pred_dist": {
+    "0": 2726,
+    "1": 224,
+    "2": 3
+   },
+   "true_dist": {
+    "0": 1244,
+    "1": 1071,
+    "2": 638
+   }
+  },
+  "frontal|150|ALL": {
+   "n": 2953,
+   "acc": 0.42363697934304095,
+   "macro_f1": 0.35059484429188914,
+   "mae_raw": 0.634765971419022,
+   "spearman_raw": 0.2638774270137086,
+   "pred_dist": {
+    "0": 680,
+    "1": 2155,
+    "2": 118
+   },
+   "true_dist": {
+    "0": 1244,
+    "1": 1071,
+    "2": 638
+   }
+  },
+  "frontal|230|ALL": {
+   "n": 2953,
+   "acc": 0.425330172705723,
+   "macro_f1": 0.21236655336277876,
+   "mae_raw": 1.0425319411994787,
+   "spearman_raw": -0.22562476144004648,
+   "pred_dist": {
+    "0": 2915,
+    "1": 33,
+    "2": 5
+   },
+   "true_dist": {
+    "0": 1244,
+    "1": 1071,
+    "2": 638
+   }
+  }
+ },
+ "runtime_s": 121.0,
+ "peak_rss_gb": 5.64
+}

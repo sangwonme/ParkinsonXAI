@@ -1,0 +1,84 @@
+{
+ "device": "cuda",
+ "arch": "cnn",
+ "seed": 1,
+ "tag": "_cnn_s1",
+ "epochs": 12,
+ "metrics": {
+  "acc": 0.5767016593294955,
+  "macro_f1": 0.5410586880513236,
+  "qwk": 0.46575095046996784,
+  "mae_expected": 0.4923449759847305
+ },
+ "ci95": {
+  "acc": [
+   0.5604385370809347,
+   0.5946495089739248
+  ],
+  "macro_f1": [
+   0.5214112037268983,
+   0.559872627027259
+  ],
+  "qwk": [
+   0.4373367684390856,
+   0.49491481396353937
+  ]
+ },
+ "per_cohort_macro_f1": {
+  "3DGait": 0.27150312132574644,
+  "BMCLab": 0.5790467899197511,
+  "PD-GaM": 0.5749744603355523,
+  "T-SDU-PD": 0.3226461687525998
+ },
+ "injection": {
+  "blackbox_gradcam|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.03044785593007179,
+   "class_increase_rate": 0.04903536977491962,
+   "explanation_hit_rate": 0.08842443729903537,
+   "chance_hit": 0.25
+  },
+  "blackbox_gradcam|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.8332355626938502,
+   "class_increase_rate": 0.5932475884244373,
+   "explanation_hit_rate": 0.4871382636655949,
+   "chance_hit": 0.25
+  },
+  "blackbox_gradcam|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.04199377514049421,
+   "class_increase_rate": 0.04340836012861737,
+   "explanation_hit_rate": 0.04983922829581994,
+   "chance_hit": 0.2
+  },
+  "blackbox_ig|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.03044785593007179,
+   "class_increase_rate": 0.04903536977491962,
+   "explanation_hit_rate": 0.11012861736334405,
+   "chance_hit": 0.25
+  },
+  "blackbox_ig|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.8332355626938502,
+   "class_increase_rate": 0.5932475884244373,
+   "explanation_hit_rate": 0.01607717041800643,
+   "chance_hit": 0.25
+  },
+  "blackbox_ig|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.04199377514049421,
+   "class_increase_rate": 0.04340836012861737,
+   "explanation_hit_rate": 0.0707395498392283,
+   "chance_hit": 0.2
+  }
+ },
+ "robustness": {
+  "blackbox|pad60": 0.23399999999999999,
+  "blackbox|scale0.8": 0.31999999999999995,
+  "blackbox|scale1.25": 0.421
+ },
+ "runtime_s": 72.1,
+ "peak_rss_gb": 1.51
+}

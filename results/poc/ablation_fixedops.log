@@ -1,0 +1,411 @@
+features (2953, 8) 1s
+fold0 ep0 val_nll=0.721 4s
+fold0 ep1 val_nll=0.688 5s
+fold0 ep2 val_nll=0.668 6s
+fold0 ep3 val_nll=0.653 7s
+fold0 ep4 val_nll=0.644 8s
+fold0 ep5 val_nll=0.635 8s
+fold0 ep6 val_nll=0.628 9s
+fold0 ep7 val_nll=0.622 10s
+fold0 ep8 val_nll=0.620 11s
+fold0 ep9 val_nll=0.624 12s
+fold0 ep10 val_nll=0.622 13s
+fold0 ep11 val_nll=0.616 14s
+fold0 ep12 val_nll=0.609 15s
+fold0 ep13 val_nll=0.633 16s
+fold0 ep14 val_nll=0.611 17s
+fold0 ep15 val_nll=0.620 18s
+fold0 ep16 val_nll=0.602 18s
+fold0 ep17 val_nll=0.617 19s
+fold0 ep18 val_nll=0.608 20s
+fold0 ep19 val_nll=0.614 21s
+fold0 ep20 val_nll=0.607 22s
+fold0 ep21 val_nll=0.609 23s
+fold0 ep22 val_nll=0.615 24s
+fold0 ep23 val_nll=0.609 25s
+fold0 ep24 val_nll=0.607 26s
+fold0 ep25 val_nll=0.601 27s
+fold0 ep26 val_nll=0.599 28s
+fold0 ep27 val_nll=0.615 29s
+fold0 ep28 val_nll=0.604 29s
+fold0 ep29 val_nll=0.597 30s
+fold0 ep30 val_nll=0.592 31s
+fold0 ep31 val_nll=0.594 32s
+fold0 ep32 val_nll=0.595 33s
+fold0 ep33 val_nll=0.604 34s
+fold0 ep34 val_nll=0.612 35s
+fold0 ep35 val_nll=0.596 36s
+fold0 ep36 val_nll=0.609 37s
+fold0 ep37 val_nll=0.585 38s
+fold0 ep38 val_nll=0.593 39s
+fold0 ep39 val_nll=0.608 39s
+C:\Works\KSEF26\XAIParkinson\scripts\poc_symptom.py:154: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  cadence_sign=float(model.g[1].sign())))
+fold 0 done 55s; total 56s
+fold1 ep0 val_nll=1.161 2s
+fold1 ep1 val_nll=1.061 3s
+fold1 ep2 val_nll=0.990 3s
+fold1 ep3 val_nll=0.961 4s
+fold1 ep4 val_nll=0.907 5s
+fold1 ep5 val_nll=0.893 6s
+fold1 ep6 val_nll=0.864 7s
+fold1 ep7 val_nll=0.850 8s
+fold1 ep8 val_nll=0.835 9s
+fold1 ep9 val_nll=0.827 10s
+fold1 ep10 val_nll=0.845 11s
+fold1 ep11 val_nll=0.809 12s
+fold1 ep12 val_nll=0.818 13s
+fold1 ep13 val_nll=0.819 14s
+fold1 ep14 val_nll=0.815 15s
+fold1 ep15 val_nll=0.816 16s
+fold1 ep16 val_nll=0.821 17s
+fold1 ep17 val_nll=0.842 18s
+fold1 ep18 val_nll=0.817 19s
+fold1 ep19 val_nll=0.807 20s
+fold1 ep20 val_nll=0.814 20s
+fold1 ep21 val_nll=0.839 21s
+fold1 ep22 val_nll=0.810 22s
+fold1 ep23 val_nll=0.834 23s
+fold1 ep24 val_nll=0.818 24s
+fold1 ep25 val_nll=0.818 25s
+fold1 ep26 val_nll=0.809 26s
+fold1 ep27 val_nll=0.793 27s
+fold1 ep28 val_nll=0.803 28s
+fold1 ep29 val_nll=0.803 28s
+fold1 ep30 val_nll=0.805 29s
+fold1 ep31 val_nll=0.797 30s
+fold1 ep32 val_nll=0.824 31s
+fold1 ep33 val_nll=0.808 32s
+fold1 ep34 val_nll=0.808 33s
+fold1 ep35 val_nll=0.808 34s
+fold1 ep36 val_nll=0.797 35s
+fold1 ep37 val_nll=0.810 36s
+fold1 ep38 val_nll=0.812 37s
+fold1 ep39 val_nll=0.811 38s
+fold 1 done 51s; total 107s
+fold2 ep0 val_nll=0.924 2s
+fold2 ep1 val_nll=0.843 3s
+fold2 ep2 val_nll=0.799 4s
+fold2 ep3 val_nll=0.772 5s
+fold2 ep4 val_nll=0.738 6s
+fold2 ep5 val_nll=0.697 7s
+fold2 ep6 val_nll=0.710 8s
+fold2 ep7 val_nll=0.675 9s
+fold2 ep8 val_nll=0.700 10s
+fold2 ep9 val_nll=0.690 11s
+fold2 ep10 val_nll=0.677 11s
+fold2 ep11 val_nll=0.682 12s
+fold2 ep12 val_nll=0.685 13s
+fold2 ep13 val_nll=0.690 14s
+fold2 ep14 val_nll=0.682 15s
+fold2 ep15 val_nll=0.672 16s
+fold2 ep16 val_nll=0.666 17s
+fold2 ep17 val_nll=0.673 18s
+fold2 ep18 val_nll=0.618 19s
+fold2 ep19 val_nll=0.656 20s
+fold2 ep20 val_nll=0.713 21s
+fold2 ep21 val_nll=0.660 22s
+fold2 ep22 val_nll=0.646 22s
+fold2 ep23 val_nll=0.684 23s
+fold2 ep24 val_nll=0.672 24s
+fold2 ep25 val_nll=0.673 25s
+fold2 ep26 val_nll=0.699 26s
+fold2 ep27 val_nll=0.677 27s
+fold2 ep28 val_nll=0.636 28s
+fold2 ep29 val_nll=0.680 29s
+fold2 ep30 val_nll=0.683 30s
+fold2 ep31 val_nll=0.666 31s
+fold2 ep32 val_nll=0.681 32s
+fold2 ep33 val_nll=0.674 32s
+fold2 ep34 val_nll=0.642 33s
+fold2 ep35 val_nll=0.679 34s
+fold2 ep36 val_nll=0.660 35s
+fold2 ep37 val_nll=0.698 36s
+fold2 ep38 val_nll=0.654 37s
+fold2 ep39 val_nll=0.684 38s
+fold 2 done 53s; total 161s
+fold3 ep0 val_nll=1.001 1s
+fold3 ep1 val_nll=0.911 2s
+fold3 ep2 val_nll=0.840 3s
+fold3 ep3 val_nll=0.799 4s
+fold3 ep4 val_nll=0.767 5s
+fold3 ep5 val_nll=0.729 6s
+fold3 ep6 val_nll=0.717 7s
+fold3 ep7 val_nll=0.696 9s
+fold3 ep8 val_nll=0.681 10s
+fold3 ep9 val_nll=0.666 11s
+fold3 ep10 val_nll=0.665 13s
+fold3 ep11 val_nll=0.658 14s
+fold3 ep12 val_nll=0.659 15s
+fold3 ep13 val_nll=0.664 16s
+fold3 ep14 val_nll=0.641 17s
+fold3 ep15 val_nll=0.639 19s
+fold3 ep16 val_nll=0.655 20s
+fold3 ep17 val_nll=0.642 21s
+fold3 ep18 val_nll=0.648 22s
+fold3 ep19 val_nll=0.632 23s
+fold3 ep20 val_nll=0.650 24s
+fold3 ep21 val_nll=0.643 25s
+fold3 ep22 val_nll=0.639 26s
+fold3 ep23 val_nll=0.640 27s
+fold3 ep24 val_nll=0.628 28s
+fold3 ep25 val_nll=0.642 29s
+fold3 ep26 val_nll=0.652 31s
+fold3 ep27 val_nll=0.638 32s
+fold3 ep28 val_nll=0.635 33s
+fold3 ep29 val_nll=0.641 34s
+fold3 ep30 val_nll=0.641 35s
+fold3 ep31 val_nll=0.636 36s
+fold3 ep32 val_nll=0.641 37s
+fold3 ep33 val_nll=0.637 38s
+fold3 ep34 val_nll=0.638 39s
+fold3 ep35 val_nll=0.629 40s
+fold3 ep36 val_nll=0.630 41s
+fold3 ep37 val_nll=0.643 42s
+fold3 ep38 val_nll=0.642 43s
+fold3 ep39 val_nll=0.641 44s
+fold 3 done 60s; total 221s
+fold4 ep0 val_nll=0.887 2s
+fold4 ep1 val_nll=0.848 3s
+fold4 ep2 val_nll=0.827 4s
+fold4 ep3 val_nll=0.792 5s
+fold4 ep4 val_nll=0.796 6s
+fold4 ep5 val_nll=0.783 7s
+fold4 ep6 val_nll=0.813 8s
+fold4 ep7 val_nll=0.812 9s
+fold4 ep8 val_nll=0.804 10s
+fold4 ep9 val_nll=0.824 11s
+fold4 ep10 val_nll=0.805 12s
+fold4 ep11 val_nll=0.824 13s
+fold4 ep12 val_nll=0.825 14s
+fold4 ep13 val_nll=0.837 15s
+fold4 ep14 val_nll=0.857 16s
+fold4 ep15 val_nll=0.831 17s
+fold4 ep16 val_nll=0.803 18s
+fold4 ep17 val_nll=0.822 19s
+fold4 ep18 val_nll=0.846 20s
+fold4 ep19 val_nll=0.848 21s
+fold4 ep20 val_nll=0.828 22s
+fold4 ep21 val_nll=0.850 23s
+fold4 ep22 val_nll=0.851 24s
+fold4 ep23 val_nll=0.872 26s
+fold4 ep24 val_nll=0.845 27s
+fold4 ep25 val_nll=0.832 28s
+fold4 ep26 val_nll=0.897 29s
+fold4 ep27 val_nll=0.834 30s
+fold4 ep28 val_nll=0.832 31s
+fold4 ep29 val_nll=0.858 32s
+fold4 ep30 val_nll=0.886 33s
+fold4 ep31 val_nll=0.841 34s
+fold4 ep32 val_nll=0.875 35s
+fold4 ep33 val_nll=0.825 36s
+fold4 ep34 val_nll=0.830 37s
+fold4 ep35 val_nll=0.852 38s
+fold4 ep36 val_nll=0.832 39s
+fold4 ep37 val_nll=0.855 40s
+fold4 ep38 val_nll=0.850 41s
+fold4 ep39 val_nll=0.798 43s
+fold 4 done 59s; total 280s
+{
+ "variant": {
+  "fixed_ops": true,
+  "no_residual": false,
+  "tag": "_fixedops"
+ },
+ "n_walks": 2953,
+ "class_counts": [
+  1244,
+  1071,
+  638
+ ],
+ "epochs": 40,
+ "lambda_r": 0.5,
+ "proposed": {
+  "metrics": {
+   "acc": 0.6166610226887911,
+   "macro_f1": 0.6056292765809128,
+   "qwk": 0.618097485281383,
+   "mae_expected": 0.466761852660785
+  },
+  "ci95": {
+   "acc": [
+    0.5980274297324755,
+    0.6346088723332205
+   ],
+   "macro_f1": [
+    0.5875142517310237,
+    0.623178052896605
+   ],
+   "qwk": [
+    0.5951879560643653,
+    0.6426089879245022
+   ],
+   "mae_expected": [
+    0.45372140518915105,
+    0.47910180646391237
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.3637909982737569,
+   "BMCLab": 0.5553809461932452,
+   "PD-GaM": 0.667188555182446,
+   "T-SDU-PD": 0.46747749933051863
+  }
+ },
+ "logreg_features": {
+  "metrics": {
+   "acc": 0.6671181848967151,
+   "macro_f1": 0.6605269223118531,
+   "qwk": 0.6528973363671875,
+   "mae_expected": 0.4325320297668611
+  },
+  "ci95": {
+   "acc": [
+    0.650186251269895,
+    0.683711479850999
+   ],
+   "macro_f1": [
+    0.6436133664380204,
+    0.6775908800223441
+   ],
+   "qwk": [
+    0.629320399251764,
+    0.6783647924061413
+   ],
+   "mae_expected": [
+    0.41986584721833126,
+    0.4451723641738496
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.44652254064018776,
+   "BMCLab": 0.6552072612550373,
+   "PD-GaM": 0.7025432450294954,
+   "T-SDU-PD": 0.4889055098479182
+  }
+ },
+ "random_forest_features": {
+  "metrics": {
+   "acc": 0.6491703352522858,
+   "macro_f1": 0.6374248064237688,
+   "qwk": 0.6206126625894317,
+   "mae_expected": 0.44443804440021434
+  },
+  "ci95": {
+   "acc": [
+    0.632577040298002,
+    0.6664493735184558
+   ],
+   "macro_f1": [
+    0.6207626004062842,
+    0.6551229480043971
+   ],
+   "qwk": [
+    0.5959167692526632,
+    0.6471606717814852
+   ],
+   "mae_expected": [
+    0.43156159833875074,
+    0.45724118471629926
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.5397184514831573,
+   "BMCLab": 0.5950009128189909,
+   "PD-GaM": 0.7044779472532127,
+   "T-SDU-PD": 0.44075642349159444
+  }
+ },
+ "residual_share": {
+  "mean": 0.021370662421034428,
+  "median": 0.01635925479958901,
+  "p90": 0.042722956685171176
+ },
+ "injection": {
+  "proposed|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.12004001544626772,
+   "class_increase_rate": 0.11736334405144695,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.125
+  },
+  "proposed|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.9025958463058499,
+   "class_increase_rate": 0.9565916398713826,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "proposed|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.1806320121161448,
+   "class_increase_rate": 0.19212218649517684,
+   "explanation_hit_rate": 0.6310289389067524,
+   "chance_hit": 0.125
+  },
+  "logreg|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.1233779178911885,
+   "class_increase_rate": 0.17041800643086816,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.125
+  },
+  "logreg|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 1.0275875794113656,
+   "class_increase_rate": 0.8914790996784566,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "logreg|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.1558890017768486,
+   "class_increase_rate": 0.2853697749196141,
+   "explanation_hit_rate": 0.23231511254019294,
+   "chance_hit": 0.125
+  },
+  "random_forest|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.16467080184859512,
+   "class_increase_rate": 0.1197749196141479,
+   "explanation_hit_rate": 0.9389067524115756,
+   "chance_hit": 0.125
+  },
+  "random_forest|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.9146122822710084,
+   "class_increase_rate": 0.8906752411575563,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "random_forest|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.17078929146965474,
+   "class_increase_rate": 0.18167202572347266,
+   "explanation_hit_rate": 0.38263665594855306,
+   "chance_hit": 0.125
+  }
+ },
+ "robustness": {
+  "proposed|pad60": 0.0,
+  "proposed|scale0.8": 0.0,
+  "proposed|scale1.25": 0.0,
+  "logreg|pad60": 0.0,
+  "logreg|scale0.8": 0.0,
+  "logreg|scale1.25": 0.0
+ },
+ "mean_abs_contribution": {
+  "stride_length": 0.7242,
+  "cadence": 0.0747,
+  "arm_swing": 0.3114,
+  "arm_asymmetry": 0.076,
+  "rhythm_irregularity": 0.0087,
+  "trunk_flexion": 0.2739,
+  "walking_speed": 0.7858,
+  "freeze_index": 0.0126
+ },
+ "runtime_s": 288.6,
+ "peak_rss_gb": 1.39
+}
+[memguard] poc_symptom peak RSS 1.39 GB (limit 6.0 GB)

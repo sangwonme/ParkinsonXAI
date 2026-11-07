@@ -1,0 +1,151 @@
+device cuda arch cnn seed 2
+fold0 ep0 4s
+fold0 ep1 4s
+fold0 ep2 5s
+fold0 ep3 6s
+fold0 ep4 7s
+fold0 ep5 8s
+fold0 ep6 9s
+fold0 ep7 10s
+fold0 ep8 11s
+fold0 ep9 12s
+fold0 ep10 12s
+fold0 ep11 13s
+fold 0 done 15s total 16s
+fold1 ep0 1s
+fold1 ep1 2s
+fold1 ep2 3s
+fold1 ep3 4s
+fold1 ep4 5s
+fold1 ep5 6s
+fold1 ep6 7s
+fold1 ep7 8s
+fold1 ep8 9s
+fold1 ep9 10s
+fold1 ep10 11s
+fold1 ep11 12s
+fold 1 done 13s total 29s
+fold2 ep0 1s
+fold2 ep1 2s
+fold2 ep2 3s
+fold2 ep3 4s
+fold2 ep4 5s
+fold2 ep5 6s
+fold2 ep6 6s
+fold2 ep7 7s
+fold2 ep8 8s
+fold2 ep9 9s
+fold2 ep10 10s
+fold2 ep11 11s
+fold 2 done 13s total 42s
+fold3 ep0 1s
+fold3 ep1 2s
+fold3 ep2 3s
+fold3 ep3 4s
+fold3 ep4 5s
+fold3 ep5 5s
+fold3 ep6 6s
+fold3 ep7 7s
+fold3 ep8 8s
+fold3 ep9 9s
+fold3 ep10 10s
+fold3 ep11 11s
+fold 3 done 13s total 54s
+fold4 ep0 1s
+fold4 ep1 2s
+fold4 ep2 3s
+fold4 ep3 4s
+fold4 ep4 4s
+fold4 ep5 5s
+fold4 ep6 6s
+fold4 ep7 7s
+fold4 ep8 8s
+fold4 ep9 9s
+fold4 ep10 10s
+fold4 ep11 11s
+fold 4 done 12s total 67s
+{
+ "device": "cuda",
+ "arch": "cnn",
+ "seed": 2,
+ "tag": "_cnn_s2",
+ "epochs": 12,
+ "metrics": {
+  "acc": 0.572976633931595,
+  "macro_f1": 0.5432086325924724,
+  "qwk": 0.4920336097340856,
+  "mae_expected": 0.4778030036256972
+ },
+ "ci95": {
+  "acc": [
+   0.5560447003047748,
+   0.5909244835760243
+  ],
+  "macro_f1": [
+   0.5247532685277311,
+   0.5623733735609346
+  ],
+  "qwk": [
+   0.4644556928001708,
+   0.5191835416871385
+  ]
+ },
+ "per_cohort_macro_f1": {
+  "3DGait": 0.4328449328449328,
+  "BMCLab": 0.5669715125840172,
+  "PD-GaM": 0.5773381186078604,
+  "T-SDU-PD": 0.29273684424894103
+ },
+ "injection": {
+  "blackbox_gradcam|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.03456182933379086,
+   "class_increase_rate": 0.03697749196141479,
+   "explanation_hit_rate": 0.15514469453376206,
+   "chance_hit": 0.25
+  },
+  "blackbox_gradcam|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.8847700775934307,
+   "class_increase_rate": 0.7033762057877814,
+   "explanation_hit_rate": 0.612540192926045,
+   "chance_hit": 0.25
+  },
+  "blackbox_gradcam|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.024620367605294957,
+   "class_increase_rate": 0.03697749196141479,
+   "explanation_hit_rate": 0.18006430868167203,
+   "chance_hit": 0.2
+  },
+  "blackbox_ig|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.03456182933379086,
+   "class_increase_rate": 0.03697749196141479,
+   "explanation_hit_rate": 0.1985530546623794,
+   "chance_hit": 0.25
+  },
+  "blackbox_ig|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.8847700775934307,
+   "class_increase_rate": 0.7033762057877814,
+   "explanation_hit_rate": 0.1527331189710611,
+   "chance_hit": 0.25
+  },
+  "blackbox_ig|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.024620367605294957,
+   "class_increase_rate": 0.03697749196141479,
+   "explanation_hit_rate": 0.10209003215434084,
+   "chance_hit": 0.2
+  }
+ },
+ "robustness": {
+  "blackbox|pad60": 0.26,
+  "blackbox|scale0.8": 0.37699999999999995,
+  "blackbox|scale1.25": 0.30800000000000005
+ },
+ "runtime_s": 70.3,
+ "peak_rss_gb": 1.57
+}
+[memguard] poc_blackbox peak RSS 1.57 GB (limit 6.0 GB)

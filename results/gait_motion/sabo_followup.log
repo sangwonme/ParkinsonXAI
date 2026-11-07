@@ -1,0 +1,14 @@
+subset 986 {0: 320, 1: 342, 2: 324} 5s
+pad k 40 121s
+pad k 60 242s
+pad k 90 367s
+group occlusion {"carepd_frontal": {"arms": {"mean_abs_change": 0.530479907989502, "class_change_rate": 0.5354969574036511}, "legs": {"mean_abs_change": 1.1355150938034058, "class_change_rate": 0.9421906693711968}, "head+shoulders": {"mean_abs_change": 0.863027036190033, "class_change_rate": 0.8468559837728195}, "hips": {"mean_abs_change": 0.03159724175930023, "class_change_rate": 0.016227180527383367}, "mean_abs_output": 0.33765700459480286}, "public_samples": {"arms": {"mean_abs_change": 0.20590603351593018, "class_change_rate": 0.5}, "legs": {"mean_abs_change": 0.279681533575058, "class_change_rate": 0.5}, "head+shoulders": {"mean_abs_change": 0.568117618560791, "class_change_rate": 0.5}, "hips": {"mean_abs_change": 0.1521468162536621, "class_change_rate": 0.25}, "mean_abs_output": 0.4250558316707611}}
+torso 100 {'mean_raw': 1.0007535219192505, 'spearman': 0.4915163125052048, 'acc': 0.48782961460446245, 'pred_dist': {'0': 196, '1': 552, '2': 238}}
+torso 130 {'mean_raw': 1.0029228925704956, 'spearman': 0.4385117840865485, 'acc': 0.4543610547667343, 'pred_dist': {'0': 130, '1': 707, '2': 149}}
+torso 150 {'mean_raw': 0.8453970551490784, 'spearman': 0.1840374723565511, 'acc': 0.3752535496957404, 'pred_dist': {'0': 168, '1': 749, '2': 69}}
+torso 170 {'mean_raw': 0.430549293756485, 'spearman': -0.08017195874331297, 'acc': 0.3174442190669371, 'pred_dist': {'0': 561, '1': 422, '2': 3}}
+torso 190 {'mean_raw': 0.0642581433057785, 'spearman': -0.19416890586986374, 'acc': 0.31643002028397565, 'pred_dist': {'0': 847, '1': 136, '2': 3}}
+torso 210 {'mean_raw': -0.11906303465366364, 'spearman': -0.23372196025658748, 'acc': 0.32150101419878296, 'pred_dist': {'0': 933, '1': 50, '2': 3}}
+torso 230 {'mean_raw': -0.17655645310878754, 'spearman': -0.2525317605430479, 'acc': 0.3255578093306288, 'pred_dist': {'0': 953, '1': 30, '2': 3}}
+torso 260 {'mean_raw': -0.1454528570175171, 'spearman': -0.2583821626575534, 'acc': 0.3306288032454361, 'pred_dist': {'0': 964, '1': 19, '2': 3}}
+[memguard] sabo_followup peak RSS 3.36 GB (limit 6.0 GB)

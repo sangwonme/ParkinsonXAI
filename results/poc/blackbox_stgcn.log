@@ -1,0 +1,141 @@
+device cuda arch stgcn seed 0
+fold0 ep0 4s
+fold0 ep1 6s
+fold0 ep2 7s
+fold0 ep3 9s
+fold0 ep4 10s
+fold0 ep5 11s
+fold0 ep6 13s
+fold0 ep7 14s
+fold0 ep8 16s
+fold0 ep9 17s
+fold 0 done 23s total 23s
+fold1 ep0 2s
+fold1 ep1 3s
+fold1 ep2 5s
+fold1 ep3 6s
+fold1 ep4 8s
+fold1 ep5 9s
+fold1 ep6 11s
+fold1 ep7 12s
+fold1 ep8 14s
+fold1 ep9 15s
+fold 1 done 20s total 43s
+fold2 ep0 2s
+fold2 ep1 3s
+fold2 ep2 5s
+fold2 ep3 6s
+fold2 ep4 7s
+fold2 ep5 9s
+fold2 ep6 10s
+fold2 ep7 12s
+fold2 ep8 13s
+fold2 ep9 15s
+fold 2 done 20s total 64s
+fold3 ep0 2s
+fold3 ep1 3s
+fold3 ep2 4s
+fold3 ep3 6s
+fold3 ep4 7s
+fold3 ep5 9s
+fold3 ep6 10s
+fold3 ep7 12s
+fold3 ep8 13s
+fold3 ep9 15s
+fold 3 done 20s total 83s
+fold4 ep0 2s
+fold4 ep1 3s
+fold4 ep2 4s
+fold4 ep3 6s
+fold4 ep4 7s
+fold4 ep5 9s
+fold4 ep6 10s
+fold4 ep7 11s
+fold4 ep8 13s
+fold4 ep9 14s
+fold 4 done 20s total 103s
+{
+ "device": "cuda",
+ "arch": "stgcn",
+ "seed": 0,
+ "tag": "_stgcn",
+ "epochs": 10,
+ "metrics": {
+  "acc": 0.6088723332204538,
+  "macro_f1": 0.6008963073022197,
+  "qwk": 0.5444629360581583,
+  "mae_expected": 0.45883328795343936
+ },
+ "ci95": {
+  "acc": [
+   0.590585844903488,
+   0.6251354554690145
+  ],
+  "macro_f1": [
+   0.5818188540981523,
+   0.61727925811028
+  ],
+  "qwk": [
+   0.5151846918357035,
+   0.5723985028025618
+  ]
+ },
+ "per_cohort_macro_f1": {
+  "3DGait": 0.37981459720590155,
+  "BMCLab": 0.6152968742484523,
+  "PD-GaM": 0.6262308917300348,
+  "T-SDU-PD": 0.39185710940653173
+ },
+ "injection": {
+  "blackbox_gradcam|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.16093903252241618,
+   "class_increase_rate": 0.1712218649517685,
+   "explanation_hit_rate": 0.6085209003215434,
+   "chance_hit": 0.25
+  },
+  "blackbox_gradcam|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.654771476759411,
+   "class_increase_rate": 0.5490353697749196,
+   "explanation_hit_rate": 0.7564308681672026,
+   "chance_hit": 0.25
+  },
+  "blackbox_gradcam|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.06249226197357444,
+   "class_increase_rate": 0.06430868167202572,
+   "explanation_hit_rate": 0.680064308681672,
+   "chance_hit": 0.2
+  },
+  "blackbox_ig|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.16093903252241618,
+   "class_increase_rate": 0.1712218649517685,
+   "explanation_hit_rate": 0.22106109324758844,
+   "chance_hit": 0.25
+  },
+  "blackbox_ig|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.654771476759411,
+   "class_increase_rate": 0.5490353697749196,
+   "explanation_hit_rate": 0.5635048231511254,
+   "chance_hit": 0.25
+  },
+  "blackbox_ig|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.06249226197357444,
+   "class_increase_rate": 0.06430868167202572,
+   "explanation_hit_rate": 0.2266881028938907,
+   "chance_hit": 0.2
+  }
+ },
+ "robustness": {
+  "blackbox|pad60": 0.34099999999999997,
+  "blackbox|scale0.8": 0.484,
+  "blackbox|scale1.25": 0.7959999999999999
+ },
+ "runtime_s": 106.1,
+ "peak_rss_gb": 1.54
+}
+[memguard] poc_blackbox peak RSS 1.54 GB (limit 6.0 GB)

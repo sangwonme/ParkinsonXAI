@@ -1,0 +1,18 @@
+# Cross-modality XAI comparison: hand drawing vs gait motion
+
+Explanation under test = Grad-CAM unless stated. accuracy: drawings = acc; Sabo samples = ensemble acc (UPDRS-gait, all labels 0); CARE-PD external = acc vs UPDRS clipped to 0-2; CARE-PD CNN = macro-F1 (3 classes).
+
+- roi_score: 0 = random map, 1 = oracle ROI map (same resolution/geometry)
+- method_agree: Spearman(Grad-CAM, perturbation method): Score-CAM for images, occlusion for gait
+- model_or_seed_agree: Spearman between Grad-CAMs of different models (images) or folds/seeds (gait)
+- e5_rho_full_rand: |Spearman| original vs fully weight-permuted model (high = fails sanity check)
+- e6 diffs: attribution-order AUC minus random-order AUC (images: prob of predicted class; Sabo: output normalised to [baseline, full]; CNN: prob). deletion < 0 and insertion > 0 = faithful
+
+| modality | model | data | accuracy | roi_def | roi_score_0rand_1oracle | pointing | pointing_rand | pointing_oracle | method_agree_gc_vs_perturb | model_or_seed_agree | agree_kind | e5_rho_full_rand | e6_del_diff | e6_ins_diff | shortcut |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| drawing | A1 MobileNet (public wts) | Kaggle spiral test (n=30) | 0.8 | ink stroke pixels | 0.17 | 0.2 | 0.1 | 0.333 | 0.373 | 0.325 | A1 vs A3 (diff. models) | 0.265 | -0.143 | 0.08 | background energy 0.77 |
+| drawing | A1 MobileNet (public wts) | Kaggle wave test (n=30) | 0.567 | ink stroke pixels | 0.192 | 0.267 | 0.133 | 0.433 | 0.438 | 0.092 | A1 vs A3 (diff. models) | 0.265 | 0.007 | 0.046 | background energy 0.81 |
+| drawing | A3 Swin-T (public wts, non-CNN) | Kaggle spiral test (n=30) | 0.833 | ink stroke pixels | 0.541 | 0.267 | 0.167 | 0.333 | -0.544 | 0.325 | A1 vs A3 (diff. models) |  | -0.088 | 0.041 | background energy 0.75 |
+| drawing | A3 Swin-T (public wts, non-CNN) | Kaggle wave test (n=30) | 0.5 | ink stroke pixels | 0.683 | 0.267 | 0.167 | 0.267 | -0.561 | 0.092 | A1 vs A3 (diff. models) |  | -0.088 | -0.095 | background energy 0.81 |
+| gait motion (2D pose) | Sabo ST-GCN (public wts, 10 folds) | Sabo public samples (n=4) | 0.5 | distal limb joints (stride/arm swing) | 0.788 | 0.25 | 0.0 | 1.0 | -0.322 | 0.362 | 10 CV folds (same arch) | 0.108 | -0.29 | -1.019 | padding share 0.34 (pad frac 0.64); nose share 0.01; edge enr 1.23 |
+| gait motion (2D pose) | Sabo ST-GCN (public wts, 10 folds) | CARE-PD frontal (external) | 0.414 | distal limb joints (stride/arm swing) | 0.878 | 0.9 | 0.583 | 1.0 | -0.362 | 0.544 | 10 CV folds (same arch) | 0.209 | 0.14 | -0.36 | padding share 0.03 (pad frac 0.05); nose share 0.02; edge enr 1.00 |

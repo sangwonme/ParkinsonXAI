@@ -1,0 +1,9 @@
+2026-11-08 02:18:57 waiting for 'GPU YIELD to Parkinson' in /c/Works/KSEF26/GenerativeUI/runs/poc/queue.log
+2026-11-08 03:00:08 GPU acquired; 5 %, 1869 MiB
+2026-11-08 03:00:08 start cnn_seed1 (limit 600s)
+2026-11-08 03:01:26 end cnn_seed1 exit=0
+2026-11-08 03:01:26 start cnn_seed2 (limit 600s)
+2026-11-08 03:02:40 end cnn_seed2 exit=0
+2026-11-08 03:02:40 start stgcn (limit 1080s)
+2026-11-08 03:04:29 end stgcn exit=0
+2026-11-08 03:04:30 queue exit (own=1)

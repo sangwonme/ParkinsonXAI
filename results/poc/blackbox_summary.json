@@ -1,0 +1,81 @@
+{
+ "device": "cpu",
+ "epochs": 12,
+ "metrics": {
+  "acc": 0.5970199796816796,
+  "macro_f1": 0.5819290011141612,
+  "qwk": 0.5155749845872399,
+  "mae_expected": 0.4842193775367655
+ },
+ "ci95": {
+  "acc": [
+   0.5790721300372502,
+   0.6146291906535727
+  ],
+  "macro_f1": [
+   0.5627897421235518,
+   0.5998142355694913
+  ],
+  "qwk": [
+   0.487226799000455,
+   0.5442750646003808
+  ]
+ },
+ "per_cohort_macro_f1": {
+  "3DGait": 0.2981408285756112,
+  "BMCLab": 0.610309442996909,
+  "PD-GaM": 0.6193851165188736,
+  "T-SDU-PD": 0.3845038416973215
+ },
+ "injection": {
+  "blackbox_gradcam|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.044279881839015996,
+   "class_increase_rate": 0.11414790996784566,
+   "explanation_hit_rate": 0.2877813504823151,
+   "chance_hit": 0.25
+  },
+  "blackbox_gradcam|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 1.0228808435943968,
+   "class_increase_rate": 0.7467845659163987,
+   "explanation_hit_rate": 0.6012861736334405,
+   "chance_hit": 0.25
+  },
+  "blackbox_gradcam|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.02553721014272777,
+   "class_increase_rate": 0.04662379421221865,
+   "explanation_hit_rate": 0.1720257234726688,
+   "chance_hit": 0.2
+  },
+  "blackbox_ig|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.044279881839015996,
+   "class_increase_rate": 0.11414790996784566,
+   "explanation_hit_rate": 0.19131832797427653,
+   "chance_hit": 0.25
+  },
+  "blackbox_ig|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 1.0228808435943968,
+   "class_increase_rate": 0.7467845659163987,
+   "explanation_hit_rate": 0.0297427652733119,
+   "chance_hit": 0.25
+  },
+  "blackbox_ig|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.02553721014272777,
+   "class_increase_rate": 0.04662379421221865,
+   "explanation_hit_rate": 0.19614147909967847,
+   "chance_hit": 0.2
+  }
+ },
+ "robustness": {
+  "blackbox|pad60": 0.225,
+  "blackbox|scale0.8": 0.33799999999999997,
+  "blackbox|scale1.25": 0.391
+ },
+ "runtime_s": 920.9,
+ "peak_rss_gb": 1.3
+}

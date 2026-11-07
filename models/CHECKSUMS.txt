@@ -1,0 +1,3 @@
+92276ebb62f72fb2305f9d8792210efce9bb9c4972b97d23ef9fee9e869fbeae *models/raw/a2_sayakpaul_fastai/parkinson-predictor.pkl
+9c7c45690c31e0a20d92e341d315d9a66b67b7c537c836bbcce3cb2e1bf2d4a5 *models/raw/a1_parkonix/keras_model.h5
+6a2cfb878b97bc6cbccaa8031290c79c0f54269d0118c476191eb162040cc1c4 *models/raw/a3_gianlab_swin/model.safetensors

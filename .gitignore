@@ -1,0 +1,58 @@
+# Raw data and third-party weights are NOT redistributed (licences: CARE-PD CC BY-NC(-ND) 4.0,
+# Sabo et al. UHN academic/non-commercial, SMPL model non-commercial, Kaggle drawings CC BY-NC-ND).
+# See README.md "Getting the data and weights".
+data/raw/
+data/processed/
+models/raw/
+models/safe/
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.safetensors
+*.onnx
+*.npz
+*.npy
+
+# Python / tools
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# Large or generated artefacts
+results/**/*.gif
+results/**/*.npz
+results/**/cams_input_frame.npz
+results/**/attr_*.npz
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets (never commit)
+.env
+*.key
+kaggle.json
+
+# Per-item tables that carry third-party dataset IDs and labels (CARE-PD, Kaggle drawings; ND licences).
+# Aggregated results are kept; regenerate these locally with the scripts.
+results/**/*per_walk*.csv
+results/**/*per_image*.csv
+results/target1/test_manifest.csv
+results/gait_motion/e0_public_samples.csv

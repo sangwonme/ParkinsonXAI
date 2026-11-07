@@ -1,0 +1,211 @@
+features (2953, 8) 1s
+fold0 ep0 val_nll=0.722 5s
+C:\Works\KSEF26\XAIParkinson\scripts\poc_symptom.py:146: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  learned.append(dict(fold=f, gait_band_hz=[float(ops.gait_lo), float(ops.gait_hi)], freeze_band_hz=[float(ops.frz_lo), float(ops.frz_hi)],
+fold 0 done 20s; total 21s
+fold1 ep0 val_nll=1.162 2s
+fold 1 done 14s; total 35s
+fold2 ep0 val_nll=0.924 2s
+fold 2 done 15s; total 50s
+fold3 ep0 val_nll=1.000 2s
+fold 3 done 15s; total 64s
+fold4 ep0 val_nll=0.887 2s
+fold 4 done 13s; total 78s
+{
+ "n_walks": 2953,
+ "class_counts": [
+  1244,
+  1071,
+  638
+ ],
+ "epochs": 1,
+ "lambda_r": 0.5,
+ "proposed": {
+  "metrics": {
+   "acc": 0.5049102607517778,
+   "macro_f1": 0.40397414006550064,
+   "qwk": 0.45607747047299063,
+   "mae_expected": 0.5310202186660387
+  },
+  "ci95": {
+   "acc": [
+    0.48932441584828984,
+    0.5225194717236709
+   ],
+   "macro_f1": [
+    0.3930294927013943,
+    0.41605116615594534
+   ],
+   "qwk": [
+    0.42860144237150327,
+    0.48858168885491
+   ],
+   "mae_expected": [
+    0.5189770375173747,
+    0.5433573752987652
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.34581599630143317,
+   "BMCLab": 0.2985789870355882,
+   "PD-GaM": 0.4471593126623928,
+   "T-SDU-PD": 0.4235652251768287
+  }
+ },
+ "logreg_features": {
+  "metrics": {
+   "acc": 0.6671181848967151,
+   "macro_f1": 0.6605269223118531,
+   "qwk": 0.6528973363671875,
+   "mae_expected": 0.4325320297668611
+  },
+  "ci95": {
+   "acc": [
+    0.650186251269895,
+    0.683711479850999
+   ],
+   "macro_f1": [
+    0.6436133664380204,
+    0.6775908800223441
+   ],
+   "qwk": [
+    0.629320399251764,
+    0.6783647924061413
+   ],
+   "mae_expected": [
+    0.41986584721833126,
+    0.4451723641738496
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.44652254064018776,
+   "BMCLab": 0.6552072612550373,
+   "PD-GaM": 0.7025432450294954,
+   "T-SDU-PD": 0.4889055098479182
+  }
+ },
+ "random_forest_features": {
+  "metrics": {
+   "acc": 0.6491703352522858,
+   "macro_f1": 0.6374248064237688,
+   "qwk": 0.6206126625894317,
+   "mae_expected": 0.44443804440021434
+  },
+  "ci95": {
+   "acc": [
+    0.632577040298002,
+    0.6664493735184558
+   ],
+   "macro_f1": [
+    0.6207626004062842,
+    0.6551229480043971
+   ],
+   "qwk": [
+    0.5959167692526632,
+    0.6471606717814852
+   ],
+   "mae_expected": [
+    0.43156159833875074,
+    0.45724118471629926
+   ]
+  },
+  "per_cohort_macro_f1": {
+   "3DGait": 0.5397184514831573,
+   "BMCLab": 0.5950009128189909,
+   "PD-GaM": 0.7044779472532127,
+   "T-SDU-PD": 0.44075642349159444
+  }
+ },
+ "residual_share": {
+  "mean": 0.02029190508369099,
+  "median": 0.017867398069239208,
+  "p90": 0.046229387725550145
+ },
+ "injection": {
+  "proposed|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.2037537651124539,
+   "class_increase_rate": 0.13344051446945338,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.125
+  },
+  "proposed|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.5655678270708087,
+   "class_increase_rate": 0.5,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "proposed|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.3954571270237159,
+   "class_increase_rate": 0.34887459807073956,
+   "explanation_hit_rate": 0.932475884244373,
+   "chance_hit": 0.125
+  },
+  "logreg|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.1233779178911885,
+   "class_increase_rate": 0.17041800643086816,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.125
+  },
+  "logreg|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 1.0275875794113656,
+   "class_increase_rate": 0.8914790996784566,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "logreg|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.1558890017768486,
+   "class_increase_rate": 0.2853697749196141,
+   "explanation_hit_rate": 0.23231511254019294,
+   "chance_hit": 0.125
+  },
+  "random_forest|reduced_arm_swing": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.16467080184859514,
+   "class_increase_rate": 0.1197749196141479,
+   "explanation_hit_rate": 0.9389067524115756,
+   "chance_hit": 0.125
+  },
+  "random_forest|short_stride": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.9146122822710084,
+   "class_increase_rate": 0.8906752411575563,
+   "explanation_hit_rate": 1.0,
+   "chance_hit": 0.25
+  },
+  "random_forest|arm_asymmetry": {
+   "n": 1244,
+   "mean_d_expected_severity": 0.17078929146965474,
+   "class_increase_rate": 0.18167202572347266,
+   "explanation_hit_rate": 0.38263665594855306,
+   "chance_hit": 0.125
+  }
+ },
+ "robustness": {
+  "proposed|pad60": 0.0,
+  "proposed|scale0.8": 0.0,
+  "proposed|scale1.25": 0.0,
+  "logreg|pad60": 0.0,
+  "logreg|scale0.8": 0.0,
+  "logreg|scale1.25": 0.0
+ },
+ "mean_abs_contribution": {
+  "stride_length": 0.3635,
+  "cadence": 0.0089,
+  "arm_swing": 0.3446,
+  "arm_asymmetry": 0.183,
+  "rhythm_irregularity": 0.0877,
+  "trunk_flexion": 0.1892,
+  "walking_speed": 0.371,
+  "freeze_index": 0.1741
+ },
+ "runtime_s": 83.3,
+ "peak_rss_gb": 1.15
+}
+[memguard] poc_symptom peak RSS 1.15 GB (limit 6.0 GB)

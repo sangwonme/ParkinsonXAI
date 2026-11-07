@@ -1,0 +1,86 @@
+{
+ "A1_MobileNet_TM|spiral|gradcam": {
+  "bg_energy": 0.7727948397397995,
+  "area_frac": 0.21800994873046875,
+  "enrichment": 1.0378321328684963,
+  "pointing_hit": 0.2,
+  "top20_on_stroke": 0.22309083801834625
+ },
+ "A1_MobileNet_TM|spiral|gradcampp": {
+  "bg_energy": 0.7748797471324603,
+  "area_frac": 0.21800994873046875,
+  "enrichment": 1.031524072778338,
+  "pointing_hit": 0.2,
+  "top20_on_stroke": 0.23278992152215622
+ },
+ "A1_MobileNet_TM|spiral|scorecam": {
+  "bg_energy": 0.7748745108644167,
+  "area_frac": 0.21800994873046875,
+  "enrichment": 1.0323357585565742,
+  "pointing_hit": 0.2,
+  "top20_on_stroke": 0.22586715491811613
+ },
+ "A1_MobileNet_TM|wave|gradcam": {
+  "bg_energy": 0.8091107768317064,
+  "area_frac": 0.1671186391330185,
+  "enrichment": 1.1360269824391565,
+  "pointing_hit": 0.26666666666666666,
+  "top20_on_stroke": 0.20970582455634698
+ },
+ "A1_MobileNet_TM|wave|gradcampp": {
+  "bg_energy": 0.8151411128540834,
+  "area_frac": 0.1671186391330185,
+  "enrichment": 1.1047270130580331,
+  "pointing_hit": 0.23333333333333334,
+  "top20_on_stroke": 0.2312792024394104
+ },
+ "A1_MobileNet_TM|wave|scorecam": {
+  "bg_energy": 0.8175718896090984,
+  "area_frac": 0.1671186391330185,
+  "enrichment": 1.0912012358703707,
+  "pointing_hit": 0.13333333333333333,
+  "top20_on_stroke": 0.22739312148425497
+ },
+ "A3_SwinTiny|spiral|gradcam": {
+  "bg_energy": 0.7540107940634092,
+  "area_frac": 0.21800994873046875,
+  "enrichment": 1.1262972018654827,
+  "pointing_hit": 0.26666666666666666,
+  "top20_on_stroke": 0.2543273074557239
+ },
+ "A3_SwinTiny|spiral|gradcampp": {
+  "bg_energy": 0.7573446075121562,
+  "area_frac": 0.21800994873046875,
+  "enrichment": 1.110450849169898,
+  "pointing_hit": 0.23333333333333334,
+  "top20_on_stroke": 0.2577179330688638
+ },
+ "A3_SwinTiny|spiral|scorecam": {
+  "bg_energy": 0.8291863416632016,
+  "area_frac": 0.21800994873046875,
+  "enrichment": 0.7890175817337328,
+  "pointing_hit": 0.0,
+  "top20_on_stroke": 0.14784697232364377
+ },
+ "A3_SwinTiny|wave|gradcam": {
+  "bg_energy": 0.8063771943251292,
+  "area_frac": 0.1606783329859963,
+  "enrichment": 1.2075138791722748,
+  "pointing_hit": 0.26666666666666666,
+  "top20_on_stroke": 0.2088859669073818
+ },
+ "A3_SwinTiny|wave|gradcampp": {
+  "bg_energy": 0.8216066365440686,
+  "area_frac": 0.1606783329859963,
+  "enrichment": 1.1147710301214577,
+  "pointing_hit": 0.23333333333333334,
+  "top20_on_stroke": 0.19136639475829
+ },
+ "A3_SwinTiny|wave|scorecam": {
+  "bg_energy": 0.8808292758961519,
+  "area_frac": 0.1606783329859963,
+  "enrichment": 0.7526981886130711,
+  "pointing_hit": 0.1,
+  "top20_on_stroke": 0.08620050835937479
+ }
+}

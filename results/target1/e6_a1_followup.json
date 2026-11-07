@@ -1,0 +1,35 @@
+{
+ "wave|all": {
+  "n": 30,
+  "mean_pmax": 0.9635342379411062,
+  "del_prob_cam": 0.8956821048969748,
+  "del_prob_rand": 0.8839159427070992,
+  "del_logodds_cam": 4.6361164953311285,
+  "del_logodds_rand": 4.220707147970796
+ },
+ "wave|correct_only": {
+  "n": 17,
+  "mean_pmax": 0.9502704529201284,
+  "del_prob_cam": 0.866937385361812,
+  "del_prob_rand": 0.8489776076962624,
+  "del_logodds_cam": 4.494065401834599,
+  "del_logodds_rand": 4.031232145463719
+ },
+ "spiral|all": {
+  "n": 30,
+  "mean_pmax": 0.9052988688151041,
+  "del_prob_cam": 0.4418345294776676,
+  "del_prob_rand": 0.5980670848136265,
+  "del_logodds_cam": -1.0924718216558298,
+  "del_logodds_rand": 1.1684335737451916
+ },
+ "spiral|correct_only": {
+  "n": 24,
+  "mean_pmax": 0.9205228686332703,
+  "del_prob_cam": 0.4902128987568252,
+  "del_prob_rand": 0.627726995674869,
+  "del_logodds_cam": -0.4833629083509246,
+  "del_logodds_rand": 1.549286306491122
+ },
+ "peak_rss_gb": 0.72
+}
